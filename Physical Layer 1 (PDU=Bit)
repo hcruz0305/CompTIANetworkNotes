@@ -1,0 +1,14 @@
+	- Cabling, Hubs
+	- NIC (Network Interface Card)
+		○ 48 Bit Value and contains MAC addressees
+		○ First 6 digits represent manufacturer (OUI), 
+		○ Las 6 Digits are the Device ID
+	- Ipconfig /all in terminal to view the MAC address and they are labeled as "Physical Address"
+	- NIC receive data through Binary 1's and 0's
+	- NIC creates and sends, as well as receives and reads the frames (Layer 2 PDU is "Frame")
+	- All NICs on the same network must use the same frame type, or they will not be able to communicate with other NIC's
+	- When a system sends a Frame it goes through the HUB which is dumb and then sends a copy of the frame to all connected ports and only the device with the matching MAC address would process that frame. This was eventually replaced by a Switch which 
+	
+	Protocol Example: 10BASE-T
+	
+	FCS:
