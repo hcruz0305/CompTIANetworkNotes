@@ -1,0 +1,21 @@
+Network Layer 3 (Packets)
+
+Tuesday, November 28, 2023
+12:20 PM
+
+-Large networks need a "Logical addressing" method which is pretty much an IP address.
+-Logical Addressing requires a network protocol
+
+-No 2 systems on the same network share the same IP address, therefore a router (magic box) connects each of the subnets
+
+-Routers use IP addresses instead of MAC addresses to forward data.
+
+
+IP addresses are in the systems software and MACs are in the NIC's
+
+
+Data is sent in the Frame
+	- The Frame contains the Packet Header and the Data (Basically the IP stuff is in-between the Frame Header and FCS.
+	- Packer contains the Destination IP and Source IP and Data
+
+Example: It's an envelope with a "To" and "From" and inside the envelope Is Data. This then gets placed in a canister like in the bank were it gets sent to the bank teller. This canister is the Frame.
