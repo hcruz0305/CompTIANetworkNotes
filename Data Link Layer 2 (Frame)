@@ -1,0 +1,28 @@
+Layer 2 = Mac Address aka Physical adreses
+
+FCS:
+
+	- FCS are only 4 bytes long but the wired frame carries out at most 1500 bytes of data. Even though it is only 4 bytes, the FCS has a calculation called CRC that compared the Frame sent by the NIC and the Frame Received by the NIC to make sure they good
+	- Bad CRC means frame is dropped
+
+Broadcasting:
+	- NIC's now the MAC Addresses it is sending to because it had previous communication and each system stores that data, however if it hasn’t had communication, it will send a Broadcast onto the network asking for it.
+	- If a NIC sends a Frame with a Broadcast address then every single NIC on the network will process that Frame
+	- Without knowing MAC then it will us IP address to pick target (Layer 3 IP - Playing)
+
+Frame Movement Process:
+
+	1. NIC receives the command to send data and starts to make the frame
+	2. Adding the data and FCS to the frame
+	3. NIC sends the frame when no one else is using the wire, and puts both the Destination MAC address and its own MAC ito the frame
+	4. The Frame has the MAC address for this NIC (Unicast Addressing)
+	5. Layer 1 and Layer 2 are now properly applied to the network
+	
+
+
+*Switches handle traffic using MAC addresses so they operate in Layer 2
+
+	
+
+
+NICs break frames down into ones and zeros for transmission and the receiving NIC's rebuilds the frame on reciept.
